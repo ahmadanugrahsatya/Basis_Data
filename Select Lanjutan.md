@@ -10,7 +10,7 @@ select warna,pemilik from mobil where warna='hitam' and pemilik='ibrahim'
 ```
 
 ## Hasil
-![](mysql24.png)
+![](aset/mysql24.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
@@ -35,7 +35,7 @@ select warna,pemilik from mobil where warna='Hitam' or pemilik='Ibrahim';
 ```
 
 ## Hasil
-![](mysql25.png)
+![](aset/mysql25.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
@@ -61,7 +61,7 @@ select * from mobil where harga_rental between 100000 and 150000;
 
 
 ## Hasil
-![](mysql26.png)
+![](aset/mysql26.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
@@ -90,7 +90,7 @@ select * from mobil where harga_rental not between 100000 and 150000;
 
 
 ## Hasil
-![](mysql27.png)
+![](aset/mysql27.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
@@ -117,7 +117,7 @@ select * from mobil where harga_rental<=50000;
 
 
 ## Hasil
-![](mysql28.png)
+![](aset/mysql28.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan hasil dari `insert`
@@ -143,7 +143,7 @@ select * from mobil where harga_rental>=50000
 
 
 ## Hasil
-![](mysql29.png)
+![](aset/mysql29.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan hasil dari `insert`
@@ -178,7 +178,7 @@ select * from mobil where harga_rental!=50000;
 
 
 ## Hasil1
-![](mysql30.png)
+![](aset/mysql30.png)
 
 ## Hasil2
 ![](mysql31.png)
@@ -214,7 +214,7 @@ select pemilik from mobil where no_plat="DD 2560 XY";
 ```
 
 ## Hasil
-![](mysql32.png)
+![](aset/mysql32.png)
 
 ## Analisis
 1. `select` query yang digunakan untuk menampilkan sebuah table
