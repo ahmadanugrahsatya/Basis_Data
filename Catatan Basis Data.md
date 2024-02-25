@@ -1,6 +1,58 @@
-# instalase mysql
+# Pengenalan Basis Data
+## Definisi Basis Data
+*Basis* : Adalah tempat berkumpul, markas, gudang, wadah suatu data
 
-## Menggunakan XAMPP
+*Data* : Adalah sekumpulan fakta sebuah objek
+
+*Kesimpulan* : *Basis data* adalah kumpulan informasi yg disimpan di dalam komputer secara sistematik
+
+
+## Peranan Basis Data
+
+Bank: Bank merupakan salah satu organisasi yang sangat tergantung kepada sistem basis data. Data nasabah, transaksi yang dilakukan, dan data keuangan lainnya disimpan di sistem basis data. Sistem ini memungkinkan layanan kepada nasabah bank dapat dilakukan dengan baik.
+
+
+## Struktur database
+
+| NO | NAMA | KELAS | UMUR | KLM |
+| ---- | ---- | ---- | ---- | ---- |
+| 1 | Ahmad Anugrah Satya | XI RPL 1 | 16 | L |
+| 2 | Muh.Daud Reski Jayadi | XI RPL 1 | 17 | L |
+| 3 | Muh.Agis | XI RPL 1 | 16 | L |
+| 4 | Muh.Nur Reski Alfatir | XI RPL 1 | 16 | L 
+
+### Tabel
+Tabel adalah sebuah struktur dasar yang menyimpan data dalam format terstruktur. Setiap tabel memiliki kolom yang mewakili atribut dan baris yang mewakili catatan. Contoh seperti di bawah berikut
+
+- Baris merupakan deretan horizontal yang terdiri dari kata, angka, data atau objek lainnya, contoh di atas contoh untuk baris seperti. 1,Ahmad Anugrah Satya, XI RPL 1, 16, L, 2, Muh.Daud Reski Jayadi, XI RPL 1, 17, L, Dan seterusnya.
+- Kolom merupakan deretan vertikal  contoh di atas untuk kolom seperti.  1, 2, 3, 4, Ahmad Anugrah Satya, Muh.Daud Reski Jayadi, Dan seterusnya.
+- untuk isinya itu merupakan sebuah item data atau karakter yang di masukkan ke dalam tabel.
+
+### Database
+Database (basis data) adalah kumpulan data yang terorganisir dengan cara tertentu untuk memudahkan pengelolaan, penyimpanan, dan pengambilan informasi. Dalam sebuah database, data disimpan dalam tabel yang terdiri dari baris dan kolom. Setiap baris dalam tabel mewakili sebuah catatan atau entitas, sedangkan kolom menyimpan. Di database juga memiliki komponen utama seperti.
+
+1. **Tabel:** Struktur dasar yang menyimpan data dalam format terstruktur. Setiap tabel memiliki kolom yang mewakili atribut dan baris yang mewakili catatan.
+    
+2. **Baris atau Record:** Masing-masing baris dalam tabel berisi data untuk satu entitas atau catatan tertentu.
+    
+3. **Kolom atau Field:** Masing-masing kolom dalam tabel menyimpan informasi tentang atribut tertentu, seperti nama, alamat, atau nomor telepon.
+	
+4. Item Data atau Karakter:  merupakan isian dari baris dan kolom.
+
+### Tabel
+Tabel adalah sebuah struktur dasar yang menyimpan data dalam format terstruktur. Setiap tabel memiliki kolom yang mewakili atribut dan baris yang mewakili catatan. Contoh seperti di bawah berikut
+
+- Baris merupakan deretan horizontal yang terdiri dari kata, angka, data atau objek lainnya, contoh di atas contoh untuk baris seperti. 1,Ahmad Anugrah Satya, XI RPL 1, 16, L, 2, Muh.Daud Reski Jayadi, XI RPL 1, 17, L, Dan seterusnya.
+- Kolom merupakan deretan vertikal  contoh di atas untuk kolom seperti.  1, 2, 3, 4, Ahmad Anugrah Satya, Muh.Daud Reski Jayadi, Dan seterusnya.
+- untuk isinya itu merupakan sebuah item data atau karakter yang di masukkan ke dalam tabel.
+
+
+
+
+# Instalasi & Query Awal Databases
+## instalase mysql
+
+### Menggunakan XAMPP
 1. buka XAMPP
 
 ![](aset/mysql1.png)
@@ -24,10 +76,10 @@
 6.  jika setelah di enter maka dibagian tersebut tidak perlu diisi langsung saja klik enter lagi
 
 ![](aset/mysql6.png)
-## referensi video youtube
+### referensi video youtube
 <https://youtu.be/tSGKZ_oaJOo?si=XhKflnx-D2Tq28Uv>
 
-## Penggunaan awal mysql 
+### Penggunaan awal mysql 
 
  query
   ```bash
@@ -47,21 +99,21 @@ analis
 kesimpulan
 kesimpulannya adalah query `mysql -u root -p` digunakan untuk masuk ke dalam aplikasi mysql melalui aplikasi xampp, dan juga untuk `-u` membuat username.
 
-# DataBase
+## DataBase
 
-## Membuat database 
+### Membuat database 
 yaitu dengan cara mengetikkan query `create database (nama database);` contoh seperti ini `create database angga_database;` maka nanti akan muncul seperti ini jika database telah terbuat.
 
 ![](aset/mysql7.png)
-## Menampilkan database
+### Menampilkan database
 untuk caranya kalian bisa mengetikkan query `show databases;`. penyebab mengapa ada tambahan huruf s di akhir kata database yaitu karena jika kalian mengetikkan `show databases;` maka yang akan di tampilakan ialah semua database yang, ada akan tetapi jika kita mengetikkan `show database;` maka yang tejadi ialah eror.
 
 ![](aset/mysql8.png)
-## Menghapus database
+### Menghapus database
 kalian bisa menggukan cara yaitu mengetikkan query `drop database (nama database);` contoh seperti `drop database angga_database;` maka nanri akan muncul seperti ini jika database berhasil terhapus
 
 ![](aset/mysql9.png)
-## Gunakan database
+### Gunakan database
 kalian bisa melakukannya dengan cara mengetikkan query `use nama database;` contoh seperti `use angga_database;` maka nanti akan muncul seperti ini jika database telah di buat
 
 ![](aset/mysql11.png)
@@ -69,9 +121,10 @@ kalian bisa melakukannya dengan cara mengetikkan query `use nama database;` cont
  >[!faq] `database_1` bisa di akses padahal telah di hapus karena `database_1` telah dibuat ulang
  
  
+
 ## Tipe data
 
-## angka 
+### angka 
 Tipe data angka dalam MySQL digunakan untuk menyimpan nilai numerik. Berikut adalah definisi untuk beberapa tipe data angka umum dalam MySQL:
 
 1. **INT atau INTEGER**: Tipe data ini digunakan untuk menyimpan bilangan bulat tanpa koma dengan panjang standar 4 byte. Contohnya, `INT(10)`.
@@ -95,7 +148,7 @@ Tipe data angka dalam MySQL digunakan untuk menyimpan nilai numerik. Berikut ada
 
 Definisi tipe data ini mencakup panjang (length), presisi, dan skala yang memberikan kontrol lebih lanjut terhadap cara data angka disimpan.
 
-## Teks
+### Teks
 Dalam MySQL, terdapat beberapa tipe data teks yang digunakan untuk menyimpan data karakter atau string. Berikut adalah beberapa tipe data teks yang umum digunakan:
 
 1. **CHAR(n)**: Menyimpan string karakter tetap (fixed-length) dengan panjang n. Jika panjang string kurang dari n, maka akan diisi dengan spasi. Misalnya, CHAR(10) akan menyimpan string dengan panjang tepat 10 karakter.
@@ -110,7 +163,7 @@ Dalam MySQL, terdapat beberapa tipe data teks yang digunakan untuk menyimpan dat
 
 Tipe data teks ini memungkinkan Anda untuk menyimpan dan mengelola data karakter dengan berbagai cara sesuai kebutuhan, baik itu string dengan panjang tetap, variabel, atau dengan batasan panjang tertentu. Pemilihan tipe data tergantung pada karakteristik data yang akan disimpan.
 
-## Tanggal
+### Tanggal
 Dalam MySQL, terdapat beberapa tipe data yang digunakan untuk menangani tanggal dan waktu. Berikut adalah beberapa tipe data tanggal yang umum digunakan:
 
 1. **DATE**: Menyimpan tanggal dengan format "YYYY-MM-DD". Tipe data ini tidak menyimpan informasi waktu, hanya tanggal.
@@ -140,7 +193,7 @@ Dalam MySQL, terdapat beberapa tipe data yang digunakan untuk menangani tanggal 
 Tipe data tanggal ini memungkinkan pengelolaan informasi tanggal dan waktu dengan baik sesuai kebutuhan aplikasi yang menggunakan MySQL. Pemilihan tipe data yang tepat sangat bergantung pada jenis informasi waktu yang ingin Anda simpan dan bagaimana Anda berencana untuk menggunakannya.
 
 
-## Boolean
+### Boolean
 Dalam MySQL, tipe data boolean umumnya diwakili oleh TINYINT(1), di mana nilai 0 menunjukkan "false" dan nilai selain 0 (biasanya 1) menunjukkan "true". Meskipun tipe data boolean tidak secara resmi didukung di MySQL sebelum versi 5.0.3, banyak aplikasi dan pengembang MySQL telah mengadopsi penggunaan TINYINT(1) untuk menyimpan nilai boolean.
 
 Berikut adalah beberapa poin yang dapat membantu menjelaskan tipe data boolean dalam MySQL:
@@ -164,14 +217,14 @@ Berikut adalah beberapa poin yang dapat membantu menjelaskan tipe data boolean d
 
 Perlu dicatat bahwa sejak MySQL versi 8.0.1, MySQL memperkenalkan tipe data BOOLEAN yang sebenarnya, tetapi di bawahnya, sebenarnya masih diimplementasikan sebagai TINYINT(1) untuk kompatibilitas mundur. Namun, dengan menggunakan BOOLEAN, kita dapat menambahkan keterangan semantik dan meningkatkan kejelasan dalam skema basis data.
 
-## Tipe data pilihan
+### Tipe data pilihan
  ENUM: Menyimpan satu nilai dari daftar yang telah ditentukan sebelumnya. Setiap nilai ENUM memiliki indeks numerik yang terkait, dan nilai yang disimpan dalam tabel adalah indeks tersebut.
     
 SET: Menyimpan satu set nilai dari daftar yang telah ditentukan sebelumnya. Nilai-nilai dalam SET diurutkan sesuai dengan urutan deklarasinya.
 
 
-# Membuat Database
-## Create Database
+## Membuat Database
+### Create Database
 Cara untuk membuat database yaitu dengan cara 
 
 Struktur Query
@@ -194,8 +247,8 @@ Analisis
 > ketika ingin membuat sebuah database baru kita harus memasukkan sebuah query yaitu `create database nama_database;`
 
 
-# Tabel
-## Buat tabel
+## Tabel
+### Buat tabel
 Cara membuat tabel di mysql kita bisa menggunakan sebuah query yaitu `create table nama_tabel(isian tabel);`
 
 >[!note] sebelum ingin membuat tabel kalian sebaiknya membuat database dan masuk ke dalam database
@@ -225,7 +278,9 @@ adalah nama tabel nya
 > [!SUMMARY] 
 >Kesimpulannya adalah ketika kita ingin membuat tabel kalian bisa menggunakan struktur query `CREATE TABLE [nama_table] (nama_kolom1 tipe_data(ukuran) [tipe_constraint], nama_kolom2 tipe_data(ukuran) [tipe_constraint], nama_kolom3 tipe_data(ukuran) [tipe_constraint] );`
 
-## Tampilkan struktur tabel
+
+
+### Tampilkan struktur tabel
 Cara untuk menampilkan struktur tabel yaitu dengan cara menggunakan query `desc (nama table);`
 
 contoh:
@@ -241,7 +296,7 @@ analisis:
 
 > [!SUMMARY] Kesimpulan
 > ketika kalian ingin membuat kalian bisa menggunakan query `desc nama_table`
-## Menampilkan daftar table
+### Menampilkan daftar table
 
 Cara untuk  menampilkan daftar table yaitu dengan cara 
 
@@ -279,21 +334,21 @@ analisis:
 >seterusnya dan boleh tidak ada.
 
 
-# Insert
-## Insert 1 data
-### Struktur
+## Insert
+### Insert 1 data
+#### Struktur
 ```mysql
 insert into [nama_table] values (nilai1, nilai2, nilai3,);
 ```
 
-### Contoh
+#### Contoh
 ```mysql
 insert into pelanggan values(1, 'Ahmad', 'Satya', '0895XXXX');
 ```
 
-### Hasil
+#### Hasil
 ![](aset/mysql15.png)
-### Analsis
+#### Analsis
 1. `insert into` adalah query yang digunakan untuk menginput isi table
 2. `pelanggan` adalah nama table nya
 3. `values` adalah query yang digunakan untuk memasukkan nilai ke kolom
@@ -303,13 +358,13 @@ insert into pelanggan values(1, 'Ahmad', 'Satya', '0895XXXX');
 > [!Summary] Kesimpulan
 > Jika ingin memasukkan sebuah nilai ke dalam tabel maka kalian bisa menggunakan query `insert into [nama_table] values(nilai1, nilai2, nilai3);`
 
-## insert lebih dari 1 data 
-### Struktur
+### insert lebih dari 1 data 
+#### Struktur
 ```mysql
 insert into [nama_table] values (nilai1, nilai2, nilai3,), (nilai4, nilai5, nilai6,);
 ```
 
-### Contoh
+#### Contoh
 ```mysql
 insert into pelanggan values(1, 'Ahmad', 'Satya', '0895XXXX'), (2, 'Daud', 'Resky', '0812XXXX'), (3, 'Resky', 'Alfatir', '0834XXXX'), (4, 'Agis', null , '0856XXXX');
 ```
@@ -317,7 +372,7 @@ insert into pelanggan values(1, 'Ahmad', 'Satya', '0895XXXX'), (2, 'Daud', 'Resk
  
 ![](aset/mysql16.png)
 
-### Analisis
+#### Analisis
 1. `insert into` query yang di gunakan untuk menginput isi table
 2. `pelanggan` adalah nama table yang ingin di isi
 3. `values` query yang di gunakan untuk memasukkan nilai ke kolom
@@ -326,23 +381,23 @@ insert into pelanggan values(1, 'Ahmad', 'Satya', '0895XXXX'), (2, 'Daud', 'Resk
 > [!Summary] Kesimpulan
 > jika ingin mengisi atau menginput kolom di mysql kalian bisa menggunakan query dengan struktur `insert into [nama_table] values (nilai1, nilai2, nilai3,), (nilai4, nilai5, nilai6,);`
 
-## Menyebut Kolom
+### Menyebut Kolom
 
-### Struktur
+#### Struktur
 ```mysql
 insert into [nama_table](kolom1, kolom2, kolom3) values (nilai1, nilai2, nilai3);
 ```
 
-### Contoh
+#### Contoh
 ```mysql
 insert into pelanggan (id_pelanggan, nama_depan) values (5, "fahri")
 ```
 
-### Hasil
+#### Hasil
 
 ![](aset/mysql17.png)
 
-### Analisis
+#### Analisis
 1. `insert into` query yang digunakan untuk menginput isi table
 2. `pelanggan` adalah nama table yang ingin di isi
 3. `(id_pelanggan, nama_depan)` nama kolom yang hanya akan di isi
@@ -352,24 +407,24 @@ insert into pelanggan (id_pelanggan, nama_depan) values (5, "fahri")
 > [!Summary] Kesimpulan
 >jika ingin memasukkan nilai yang hanya ke kolom tertentu kalian bisa pakai sebuah query yang strukutur nya  `insert into [nama_table](kolom1, kolom2, kolom3) values (nilai1, nilai2, nilai3);`
 
-# Select
+## Select
 
-## Seluruh Data
-### Struktur
+### Seluruh Data
+#### Struktur
 
 ```mysql
 Select * from [nama_table]
 ```
 
-### Contoh
+#### Contoh
 ```mysql
 select * from pelanggan;
 ```
 
-### Hasil
+#### Hasil
 ![](aset/mysql18.png)
 
-### Analisis
+#### Analisis
 1. `Select` merupakan query yang digunakan untuk menampilkan hasil `insert` 
 2. `*` artinya semua kolom yang ada di table akan di tampilkan 
 3. `from` query yang digunakan untuk memberikan penanda bahwa table mana yang akan di tampilkan
@@ -378,42 +433,42 @@ select * from pelanggan;
 > [!summary] Kesimpulan
 > jika ingin menampilkan hasil dari insert kalian bisa menggunakan query yaitu dengan struktur `Select * from [nama_table]`
 
-## Data Kolom Tertentu 
-### Struktur 
+### Data Kolom Tertentu 
+#### Struktur 
 
 ```mysql
 select [nama_kolom1], [nama_kolom2], mysqlolom_n]
 ```
 
-### Contoh
+#### Contoh
 ```mysql
 select nama_depan from pelanggan;
 ```
 
-### Hasil
+#### Hasil
 ![](aset/mysql19.png)
 
-### Analisis
+#### Analisis
 
 1. `Select` merupakan query yang digunakan untuk menampilkan hasil `insert` 
 2. `nama_depan`  adalah nama kolom yang akan di tampilkan
 3. `from` query yang digunakan untuk memberikan penanda bahwa table mana yang akan di tampilkan
 4. `pelanggan` merupakan nama table yang isi nya akan di tampilkan
-## Klausa WHERE 
-### Struktur
+### Klausa WHERE 
+#### Struktur
 ```mysql
 select [nama_kolom] form pelanggan [nama_table] where[kondisi];
 ```
 
-### Contoh
+#### Contoh
 ```mysql
 select id_pelanggan, nama_depan from pelanggan where id_pelanggan=2;
 ```
 
-### Hasil
+#### Hasil
 ![](aset/mysql20.png)
 
-### Analisis
+#### Analisis
 1. `select` merupakan query yang digunakan untuk menampilkan hasil `insert` 
 2. `id_pelanggan, nama_depan` adalah nama kolom yang akan di tampilkan
 3. `from` adalah penanda yang digunakan untuk menandakan table mana yang akan di tampilkan
@@ -423,24 +478,24 @@ select id_pelanggan, nama_depan from pelanggan where id_pelanggan=2;
 
 > [!summary]
 > jika ingin menampilkan baris yaitu dengan query yang dengan struktur `select [nama_kolom] form pelanggan [nama_table] where[kondisi];`
-# Update
+## Update
 
-## Struktur
+### Struktur
 ```mysql
 update nama_table set nama_kolom where kondisi;
 ```
 
-## Contoh
+### Contoh
 
 ```mysql
 update pelanggan set no_telpon="0801XXXX" where id_pelanggan="1";
 ``` 
 
-## Hasil
+### Hasil
 ![](aset/mysql21.png)
 
 
-## Analisis
+### Analisis
 1. `update` adalah query yang digunakan untuk memperbarui nilai dari kolom
 2. `pelanggan` nama table yang akan di perbarui nilai kolomnya
 3. `set` query yang digunakan untuk memberikan penanda bahwa yang nilainya akan di rubah 
@@ -452,24 +507,24 @@ update pelanggan set no_telpon="0801XXXX" where id_pelanggan="1";
 > jika ingin mengubah atau mengupdate sebuah table kalian bisa menggunakan query `update` dengan struktur query yaitu `update nama_table set nama_kolom where kondisi;`
 
 
-# Delete
+## Delete
 
-## Struktur
+### Struktur
 
 ```mysql
 delete from nama_table where kondisi;
 ```
 
-## Contoh
+### Contoh
 
 ```mysql
 delete from pelanggan where id_pelanggan=5;
 ```
 
-## Hasil
+### Hasil
 ![](aset/mysql22.png)
 
-## Analisis
+### Analisis
 1. `delete` query yang digunakan untuk menghapus baris kolom
 2. `from` query yang digunakan untuk memberikan penanda bahwa table mana yang akan di hapus baris nya
 3. `pelanggan` nama table yang akan di hapus baris nya
@@ -482,22 +537,22 @@ delete from pelanggan where id_pelanggan=5;
 > jika ingin menghapus baris table kalian bisa menggunakan query `delete` dengan struktur yaitu `delete from nama_table where kondisi;`
 
 
-# Drop Table
+## Drop Table
 
-## Struktur 
+### Struktur 
 ```mysql
 Drop table [nama_table];
 ```
 
-## Contoh
+### Contoh
 ```mysql
 drop table pelanggan;
 ```
 
-## Hasil
+### Hasil
 ![](aset/mysql23.png)
 
-## Analisis
+### Analisis
 1. `drop table` query yang digunakan untuk menghapus sebuah table
 2. `pelanggan` merupakan nama table yang akan di hapus
 
@@ -506,4 +561,239 @@ drop table pelanggan;
 > jika ingin menghapus table kalian bisa menggunakan query  `drop` dengan struktur query yaitu `drop table [nama_table];`
 
 
- 
+
+
+
+# Select Lanjutan
+## AND 
+### Struktur
+```mysql
+select kolom1,kolom2 from nama_table where kolom1='nilai_kolom1' and kolom2='nilai_kolom2';
+```
+
+### Contoh
+```mysql
+select warna,pemilik from mobil where warna='hitam' and pemilik='ibrahim'
+```
+
+### Hasil
+![](aset/mysql24.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
+2. `warna,pemilik` merupakan nama kolom dari mobil
+3. `from` query yang digunakan untuk memberi tanda bahwa tabel mana yang akan di tampilak
+4. `where` query yang digunakan untuk memberikan sebuah kondisi
+5. `warna='hitam' and pemilik='ibrahim'` merupakan sebuah kondisi untuk query dan `and` digunakan untuk memberikan syarat yang keduanya harus di penuhi 
+
+> [!summary] Kesimpulan
+> jika ingin menampilakan data yang telah di seleksi dengan cara memberikan syarat yang semuanya harus di penuhi kalian bisa menggunakan query dengan struktur 
+> `select kolom1,kolom2 from nama_table where kolom1='nilai_kolom1' and kolom2='nilai_kolom2';`
+
+## OR
+### Struktur
+```mysql
+select kolom1,kolom2 from nama_table where kolom1='nilai_kolom1' or kolom2='nilai_kolom2';
+```
+
+### Contoh
+```mysql
+select warna,pemilik from mobil where warna='Hitam' or pemilik='Ibrahim';
+```
+
+### Hasil
+![](aset/mysql25.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
+2. `warna,pemilik` merupakan nama kolom dari mobil
+3. `from` query yang digunakan untuk memberi tanda bahwa tabel mana yang akan di tampilak
+4. `where` query yang digunakan untuk memberikan sebuah kondisi
+5. `warna='hitam' or pemilik='ibrahim'` merupakan sebuah kondisi untuk query dan `or` digunakan untuk memberikan syarat yang salah satunya harus di penuhi 
+
+> [!summary] Kesimpulan
+> jika kalian ingin menampilakan data tabel dari kolom yang nilainya telah di seleksi dengan cara memberikan syarat yang salah satunya harus di penuhi kalian bisa menggunakan query dengan struktur  `select warna,pemilik from mobil where warna='Hitam' or pemilik='Ibrahim';`
+
+## Between
+
+### Struktur
+```mysql
+select * from nama_table where nama_kolom between nilai1 and nilai2;
+```
+
+### Contoh
+```mysql
+select * from mobil where harga_rental between 100000 and 150000;
+```
+
+
+### Hasil
+![](aset/mysql26.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
+2. `*`  berarti semua kolom akan di tampilkan
+3. `from` untuk memberikan tanda bahwa table mana yang akan di tampilkan
+4. `mobil` nama table yang akan di tampilkan
+5. `where` untuk memberikan sebuah kondisi
+6. `harga_rental` nama kolom yang digunakan untuk mengkondisikan sebuah table
+7. `between` Ini adalah operator yang digunakan untuk memilih rentang nilai
+8. `100000 and 150000` Ini adalah nilai rentang yang digunakan dalam kriteria pemilihan data
+
+> [!summary] Kesimpulan
+> Jika ingin menampilakan hasil dari menyeleksi table dengan cara memberikan sebuah rentang nilai kalian bisa menggunakan sebuah query dengean struktur `select * from nama_table where nama_kolom between nilai1 and nilai2;`
+
+
+## Not Between
+### Struktur
+```mysql
+select * from nama_table where nama_kolom not between nilai1 and nilai2;
+```
+
+### Contoh
+```mysql
+select * from mobil where harga_rental not between 100000 and 150000;
+```
+
+
+### Hasil
+![](aset/mysql27.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan masukan dari `insert`
+2. `*`  berarti semua kolom akan di tampilkan
+3. `from` untuk memberikan tanda bahwa table mana yang akan di tampilkan
+4. `mobil` nama table yang akan di tampilkan
+5. `where` untuk memberikan sebuah kondisi
+6. `harga_rental` nama kolom yang digunakan untuk mengkondisikan sebuah table
+7. `not between` Ini adalah operator yang digunakan untuk memilih nilai di luar rentang tertentu.
+8. `100000 and 150000` Ini adalah nilai rentang yang digunakan dalam kriteria pemilihan data
+
+> [!summary] Kesimpulan
+> Jika ingin menampilakan hasil dari menyeleksi table dengan cara memberikan sebuah rentang nilai yang beda nya sebelumnya itu jika nilai tersebut masih berada di dalam rentang nilai yang diberikan maka akan di tampilkan sedangkan kali ini di luar dari rentang nilai yang akan di tampilkan untuk itu kalian bisa menggunakan sebuah query dengan struktur `select * from nama_table where nama_kolom not between nilai1 and nilai2;`
+## <=
+### Struktur
+```mysql
+select * from nama_table where nama_kolom<=nilai;
+```
+
+### Contoh
+```mysql
+select * from mobil where harga_rental<=50000;
+```
+
+
+### Hasil
+![](aset/mysql28.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan hasil dari `insert`
+2. `*` arti nya semua kolom akan ditampilkan
+3. `from` query yang digunakan untuk memberikan penanda bahwa table mana yang akan di tampilkan
+4. `mobil` nama table yang akan ditampilkan
+5. `where` query yang digunakan untuk memberikan sebuah kondisi
+6. `harga_rental<=50000` sebuah kondisi yang telah di berikan dan `harga_rental` itu nama kolom, `<=` merupakan operator, dan `50000`merupakan sebuah nilai
+
+> [!summary] Kesimpulan
+> jika ingin menampilkan table dengan menggunakan hasil seleksi yang dimana jika dia lebih kecil dari nilai yang di tentukan maka dia akan tampil, yaitu dengan cara menggunakan query dengan struktur `select * from nama_table where nama_kolom<=nilai;`
+
+## >=
+### Struktur
+```mysql
+select * from nama_table where nama_kolom>=nilai;
+```
+
+### Contoh
+```mysql
+select * from mobil where harga_rental>=50000
+```
+
+
+### Hasil
+![](aset/mysql29.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan hasil dari `insert`
+2. `*` arti nya semua kolom akan ditampilkan
+3. `from` query yang digunkan untuk memberikan penanda bahwa table mana yang akan di tampilkan
+4. `mobil` nama table yang akan ditampilkan
+5. `where` query yang digunakan untuk memberikan sebuah kondisi
+6. `harga_rental>=50000` sebuah kondisi yang telah di berikan dan `harga_rental` itu nama kolom, `>=` merupakan operator, dan `50000`merupakan sebuah nilai
+
+>[!summary] Kesimpulan
+> jika ingin menampilkan table dengan menggunakan hasil seleksi yang dimana jika dia lebih besar dari nilai yang di tentukan maka dia akan tampil, yaitu dengan cara menggunakan query dengan struktur `select * from nama_table where nama_kolom<=nilai;`
+## <> atau !=
+### Struktur1
+```mysql
+select * from nama_table where nama_kolom<>nilai;
+```
+
+### Struktur2
+```mysql
+select * from nama_table where nama_kolom!=nilai;
+```
+
+### Contoh1
+```mysql
+select * from mobil where harga_rental<>50000; 
+```
+
+### Contoh2
+```mysql
+select * from mobil where harga_rental!=50000; 
+```
+
+
+### Hasil1
+![](aset/mysql30.png)
+
+### Hasil2
+![](mysql31.png)
+
+### Analisis1
+1. `select` query yang digunakan untuk menampilkan hasil dari `insert`
+2. `*` arti nya semua kolom akan ditampilkan
+3. `from` query yang digunkan untuk memberikan penanda bahwa table mana yang akan di tampilkan
+4. `mobil` nama table yang akan ditampilkan
+5. `where` query yang digunakan untuk memberikan sebuah kondisi
+6. `harga_rental<>50000` sebuah kondisi yang telah di berikan dan `harga_rental` itu nama kolom, `<>` merupakan operator, dan `50000` merupakan sebuah nilai
+
+### Analisis2
+1. `select` query yang digunakan untuk menampilkan hasil dari `insert`
+2. `*` arti nya semua kolom akan ditampilkan
+3. `from` query yang digunkan untuk memberikan penanda bahwa table mana yang akan di tampilkan
+4. `mobil` nama table yang akan ditampilkan
+5. `where` query yang digunakan untuk memberikan sebuah kondisi
+6. `harga_rental!=50000` sebuah kondisi yang telah di berikan dan `harga_rental` itu nama kolom, `!=` merupakan operator, dan `50000`merupakan sebuah nilai
+
+> [!summary]
+> dari kedua contoh operator kita bisa menyimpulkan bahwa operator `!=` dengan `<>` memiliki arti yang sama yang dimana jika ingin menampilakan table dengan menggunakan sebauh nilai maka nilai yang ingin di tampilakan tidak boleh sama dengan nilai yang telah di tentukan
+
+## Tantangan Login
+### Struktur
+```mysql
+select nama_kolom1 from nama_table where nama_kolom2=nilai;
+```
+
+### Contoh
+```mysql
+select pemilik from mobil where no_plat="DD 2560 XY";
+```
+
+### Hasil
+![](aset/mysql32.png)
+
+### Analisis
+1. `select` query yang digunakan untuk menampilkan sebuah table
+2. `pemilik` nama kolom yang dimana hanya isi dari kolom ini yang akan di tampilkan
+3. `from` query yang digunakan untuk memberikan sebuah tanda ke table yang akan di tampilkan 
+4. `mobil` nama table yang akan di tampilkan
+5. `where` query yang digunakan untuk memberikan sebuah kondisi 
+6. `no_plat="DD 2560 XY"` sebuah kondisi yang telah diberikan. `no_plat` adalah nama kolom, `=` adalah operator, dan `"DD 2560 XY"` adalah nilai.
+
+> [!summary]
+> jika ingin menampilkan dari hasil seleksi yang dimana hanya ada satu nilai dari satu kolom aka di tampilkan, yaitu dengan cara menggunakan query dengan struktur `select nama_kolom1 from nama_table where nama_kolom2=nilai;`
+
+> [!NOTE] `nama_kolom2` harus kolom yang menggunakan constraint unique 
+
+
