@@ -1,0 +1,340 @@
+{
+  "model": {
+    "columns": [
+      {
+        "id": "fb79407e-e775-46ab-9fd7-ec283c428b4f",
+        "sortDir": "default",
+        "isVisible": false,
+        "width": "140px",
+        "type": "text",
+        "numberPrefix": "",
+        "numberSuffix": "",
+        "numberSeparator": "",
+        "content": "NO",
+        "numberFormat": "number",
+        "currencyType": "USD",
+        "dateFormat": "mmddyyyy",
+        "dateFormatSeparator": "-",
+        "hour12": true,
+        "includeTime": false,
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset",
+        "frontmatterKey": null
+      },
+      {
+        "id": "f63f825a-dfa5-4dbf-a169-468d5a464866",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "69px",
+        "type": "text",
+        "numberPrefix": "",
+        "numberSuffix": "",
+        "numberSeparator": "",
+        "content": "            NO",
+        "numberFormat": "number",
+        "currencyType": "USD",
+        "dateFormat": "mmddyyyy",
+        "dateFormatSeparator": "-",
+        "hour12": true,
+        "includeTime": false,
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset",
+        "frontmatterKey": null
+      },
+      {
+        "id": "401c3624-088a-4ebb-b056-359774719364",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "187px",
+        "type": "text",
+        "numberPrefix": "",
+        "numberSuffix": "",
+        "numberSeparator": "",
+        "content": "NAMA",
+        "numberFormat": "number",
+        "currencyType": "USD",
+        "dateFormat": "mmddyyyy",
+        "dateFormatSeparator": "-",
+        "hour12": true,
+        "includeTime": false,
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset",
+        "frontmatterKey": null
+      },
+      {
+        "id": "9f816013-301f-40f5-9c89-185796ea197a",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "90px",
+        "type": "text",
+        "numberPrefix": "",
+        "numberSuffix": "",
+        "numberSeparator": "",
+        "content": "KELAS",
+        "numberFormat": "number",
+        "currencyType": "USD",
+        "dateFormat": "mmddyyyy",
+        "dateFormatSeparator": "-",
+        "hour12": true,
+        "includeTime": false,
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset",
+        "frontmatterKey": null
+      },
+      {
+        "id": "3e2d8f51-5539-4dab-96d4-a0e18fa73059",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "95px",
+        "type": "text",
+        "numberPrefix": "",
+        "numberSuffix": "",
+        "numberSeparator": "",
+        "content": "UMUR",
+        "numberFormat": "number",
+        "currencyType": "USD",
+        "dateFormat": "mmddyyyy",
+        "dateFormatSeparator": "-",
+        "hour12": true,
+        "includeTime": false,
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset",
+        "frontmatterKey": null
+      },
+      {
+        "id": "65a4511f-02fb-4079-a986-1f6dab6ae255",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "81px",
+        "type": "text",
+        "numberPrefix": "",
+        "numberSuffix": "",
+        "numberSeparator": "",
+        "content": "KLM",
+        "numberFormat": "number",
+        "currencyType": "USD",
+        "dateFormat": "mmddyyyy",
+        "dateFormatSeparator": "-",
+        "hour12": true,
+        "includeTime": false,
+        "shouldWrapOverflow": true,
+        "tags": [],
+        "calculationType": "none",
+        "aspectRatio": "unset",
+        "horizontalPadding": "unset",
+        "verticalPadding": "unset",
+        "frontmatterKey": null
+      }
+    ],
+    "rows": [
+      {
+        "id": "bacbd7a2-ce2a-41c5-9ea1-3c38ffeb6ba0",
+        "index": 0,
+        "sourceId": null,
+        "creationDateTime": "2024-01-22T09:57:34.435Z",
+        "lastEditedDateTime": "2024-01-22T10:15:47.298Z",
+        "cells": [
+          {
+            "id": "3c5d3469-3e28-4d8c-bc17-784cab22d362",
+            "columnId": "fb79407e-e775-46ab-9fd7-ec283c428b4f",
+            "content": "",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "71a74822-9115-40e9-a1aa-7f4460d08679",
+            "columnId": "f63f825a-dfa5-4dbf-a169-468d5a464866",
+            "content": "1 ",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "104ad8eb-044d-472d-bca9-f74da9c599be",
+            "columnId": "401c3624-088a-4ebb-b056-359774719364",
+            "content": "Ahmad Anugrah Satya",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "0ea463e9-af6c-44db-929c-736792b60eae",
+            "columnId": "9f816013-301f-40f5-9c89-185796ea197a",
+            "content": "XI RPL 1",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "d68701b5-676b-463a-a2aa-7f3055c69fee",
+            "columnId": "3e2d8f51-5539-4dab-96d4-a0e18fa73059",
+            "content": "16",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "01174c19-74c0-4ca2-8b96-1be9f95934ab",
+            "columnId": "65a4511f-02fb-4079-a986-1f6dab6ae255",
+            "content": "L",
+            "hasValidFrontmatter": null
+          }
+        ]
+      },
+      {
+        "id": "fbf4078b-d53f-44be-8ccb-af8959a00725",
+        "index": 1,
+        "sourceId": null,
+        "creationDateTime": "2024-01-22T10:15:40.183Z",
+        "lastEditedDateTime": "2024-01-22T10:17:39.023Z",
+        "cells": [
+          {
+            "id": "7caf31b8-318a-4380-8648-7dd038bf2bdc",
+            "columnId": "fb79407e-e775-46ab-9fd7-ec283c428b4f",
+            "content": "",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "27af51d7-e4ec-49b3-a10b-ad7ff6b0fa59",
+            "columnId": "f63f825a-dfa5-4dbf-a169-468d5a464866",
+            "content": "2",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "4437bb74-702b-49bf-a270-5f73f28e2c18",
+            "columnId": "401c3624-088a-4ebb-b056-359774719364",
+            "content": "Muh.Daud Reski Jayadi",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "f4944310-6ed1-43ba-8e8c-9e6a246a711a",
+            "columnId": "9f816013-301f-40f5-9c89-185796ea197a",
+            "content": "XI RPL 1",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "95bf3772-69a1-4ff1-874f-ec76acb19ad7",
+            "columnId": "3e2d8f51-5539-4dab-96d4-a0e18fa73059",
+            "content": "17",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "2b18f855-2d89-483d-87fb-d0938b5810fd",
+            "columnId": "65a4511f-02fb-4079-a986-1f6dab6ae255",
+            "content": "L",
+            "hasValidFrontmatter": null
+          }
+        ]
+      },
+      {
+        "id": "9d7c84f5-250d-433f-9810-f32bfc8bfe43",
+        "index": 2,
+        "sourceId": null,
+        "creationDateTime": "2024-01-22T10:17:41.948Z",
+        "lastEditedDateTime": "2024-01-22T12:07:04.163Z",
+        "cells": [
+          {
+            "id": "c0ec93fa-8e3a-4f88-8992-06d79236c5b5",
+            "columnId": "fb79407e-e775-46ab-9fd7-ec283c428b4f",
+            "content": "",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "29a3400b-34bf-4043-bc82-28a5c939f188",
+            "columnId": "f63f825a-dfa5-4dbf-a169-468d5a464866",
+            "content": "3",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "e9561a96-0303-4aa5-a148-235b09cc47a5",
+            "columnId": "401c3624-088a-4ebb-b056-359774719364",
+            "content": "Muh.Agis ",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "9faf074d-d5ba-4846-8be9-177bc92101ba",
+            "columnId": "9f816013-301f-40f5-9c89-185796ea197a",
+            "content": "XI RPL 1",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "dc63d03b-995e-4800-aa11-c27c9b215813",
+            "columnId": "3e2d8f51-5539-4dab-96d4-a0e18fa73059",
+            "content": "16",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "b05bd297-b833-4bfa-951b-ec4500eae32c",
+            "columnId": "65a4511f-02fb-4079-a986-1f6dab6ae255",
+            "content": "L",
+            "hasValidFrontmatter": null
+          }
+        ]
+      },
+      {
+        "id": "88d0eaf3-236a-4059-b32b-ec039e9605b9",
+        "index": 3,
+        "sourceId": null,
+        "creationDateTime": "2024-01-22T10:28:58.364Z",
+        "lastEditedDateTime": "2024-01-22T12:07:10.630Z",
+        "cells": [
+          {
+            "id": "9321280f-eaa6-40c1-9966-6ef54f9fd1b3",
+            "columnId": "fb79407e-e775-46ab-9fd7-ec283c428b4f",
+            "content": "",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "34fe744a-e27d-423e-b67b-9717ab904260",
+            "columnId": "f63f825a-dfa5-4dbf-a169-468d5a464866",
+            "content": "4",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "87523833-bb57-4937-a0b9-ac1529b6f5ae",
+            "columnId": "401c3624-088a-4ebb-b056-359774719364",
+            "content": "Muh.Nur Reski Alfatir",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "f40ddafe-5c47-4aea-aaf0-381042b0fcc6",
+            "columnId": "9f816013-301f-40f5-9c89-185796ea197a",
+            "content": "XI RPL 1",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "4bf722c0-c024-47ec-aa60-f8aa890538b2",
+            "columnId": "3e2d8f51-5539-4dab-96d4-a0e18fa73059",
+            "content": "16",
+            "hasValidFrontmatter": null
+          },
+          {
+            "id": "0fa3e0af-91c9-4c05-b65e-7054355115ba",
+            "columnId": "65a4511f-02fb-4079-a986-1f6dab6ae255",
+            "content": "L",
+            "hasValidFrontmatter": null
+          }
+        ]
+      }
+    ],
+    "filters": [],
+    "sources": [],
+    "settings": {
+      "numFrozenColumns": 1,
+      "showCalculationRow": true
+    },
+    "externalRowOrder": []
+  },
+  "pluginVersion": "8.15.11"
+}
