@@ -1,4 +1,4 @@
-# 4
+# Query 4
 ```mysql
 SELECT ProductsID FROM products UNION SELECT ProductID FROM OrderDetails;
 ```
@@ -15,7 +15,7 @@ SELECT ProductsID FROM products UNION SELECT ProductID FROM OrderDetails;
 - From soles untur memilih dari tabel mana sara Xing data kolonnya akan dibaland Hasilnya merupakan hasil Sabundan dari tabel Productsdummy dan Sales Farom ProductID merupakan kolam Yang datanya dilabuni namun data duplikać terhapus/tidak ditampilkan karena tampilan undan adalah Distinct
 
 
-# 5
+# Query 5
 
 ```mysql
 SELECT ProductID FROM products UNION ALL SELECT ProductID FROM OrderDetails;
@@ -36,7 +36,7 @@ SELECT ProductID FROM products UNION ALL SELECT ProductID FROM OrderDetails;
 - FROM OrderDetails = untuk memilih dari tabel mana saja yang data kolomnya akan digabung   
 - Hasilnya = semua data termasuk data duplikat akan di tampilkan semua. Dari tabel Products dan OrderDetails
 
-# 6
+# Query 6
 ## Kode Program
 ```mysql
 SELECT ProductID FROM products INTERSECT SELECT ProductID FROM OrderDetails;
