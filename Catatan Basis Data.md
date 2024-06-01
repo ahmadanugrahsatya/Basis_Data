@@ -797,3 +797,19 @@ select pemilik from mobil where no_plat="DD 2560 XY";
 > [!NOTE] `nama_kolom2` harus kolom yang menggunakan constraint unique 
 
 
+
+
+create table pelanggan 
+(id_pelanggan int(4) primary key not null, 
+nama_depan varchar(25) not null, 
+nama_belakang varchar(25), 
+no_telpon char(12) unique);
+
+create table table_guru 
+(id_guru int(2) PRIMARY KEY not null, 
+nama_depan varchar(30) not null, 
+nama_belakang varchar(25), 
+mapel varchar(30) not null, 
+jabatan varchar(30) unique not null, 
+usia int(10) not null, 
+tanggal_lahir date(12) not null);
