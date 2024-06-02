@@ -1,3 +1,186 @@
+# Buat Database
+## Kode Program
+```mysql
+create database rental_angga;
+```
+## Hasil
+![](aset/mysql101.png)
+
+## Analisis
+Perintah `CREATE DATABASE` digunakan untuk membuat database baru dengan nama `rental_angga`
+
+## Kesimpulan
+Digunakan untuk membuat databas
+
+# Tampilkan Database
+## Kode Program
+```mysql
+show databases;
+```
+## Hasil
+![](aset/mysql102.png)
+
+## Analisis
+Perintah `show databases` digunakan untuk menampilkan daftar database yang ada.
+
+## Kesimpulan
+Digunakan untuk melihat daftar database
+
+# Gunakan Database
+## Kode Program
+```mysql
+use rental_angga
+```
+
+## Hasil
+![](aset/mysql103.png)
+
+## Analisis
+Perintah `use` digunakan untuk memilih database yang akan digunakan.
+
+## Kesimpulan
+ digunakan untuk memilih database
+
+# Buat Table
+## Kode Program
+```mysql
+CREATE TABLE mobil (
+    id_mobil INT(11) PRIMARY KEY,
+    no_plat VARCHAR(20),
+    no_mesin VARCHAR(20),
+    warna VARCHAR(20),
+    pemilik VARCHAR(50),
+    peminjam VARCHAR(50),
+    harga_rental INT(11)
+);
+```
+
+## Hasil
+![](aset/mysql104.png)
+
+## Analisis
+- Perintah `CREATE TABLE` digunakan untuk membuat tabel dengan kolom-kolom yang sesuai.
+- id_mobil, no_plat, no_mesin, warna, pemilik, peminjam, harga_rental adalah nama kolom
+- int, varchar ada lah tipe data
+- nomor-nomor yang ada di dalam kurung adalah jumlah max karakter yang dapat di masukkan ke dalam kolom tersebut
+
+## Kesimpulan
+Digunakan untuk membuat table
+
+# Tampilkan Struktur Table
+## Kode Program
+```mysql
+desc mobil;
+```
+
+## Hasil
+![](aset/mysql104.png)
+
+## Analisis
+Perintah `DESC` digunakan untuk menampilkan struktur tabel.
+
+## Kesimpulan
+Digunakan untuk menampilkan struktur table
+
+# Insert
+## Kode Program
+```mysql
+INSERT INTO mobil (id_mobil, no_plat, no_mesin, warna, pemilik, peminjam, harga_rental)
+VALUES
+    (1, 'DD 2650 XY', 'ACX3560', 'Hitam', 'Ibrahim', 'Afdal', 50000),
+    (2, 'DD 2440 AX', 'BCS1120', 'Merah', 'Ibrahim', NULL, 100000),
+    (3, 'B 1611 QC', 'LSQ1112', 'Silver', 'Baim', 'Anty', 50000),
+    (4, 'DD 2901 JK', 'UQL1029', 'Hitam', 'Ibe', NULL, 150000),
+    (5, 'DD 2210 LS', 'CJH1011', 'Hitam', 'Ibe', NULL, 100000);
+```
+
+## Hasil
+![](aset/mysql105.png)
+
+## Analisis
+- Perintah `INSERT INTO` digunakan untuk memasukkan data ke dalam tabel.
+-  mobil adalah nama table 
+- nama-nama yang ada di dalam kurung setelah nama table adalah nama table
+- dan `values` untuk menetukan nilainya 
+- dan isi dalam kurung setalah `values` adalah isi kolom yang akan di tambahkan
+
+
+## Kesimpulan
+Query tersebut digunakan untuk memberikan isi kedalam table
+
+
+# Update
+## Kode Program
+```mysql
+UPDATE mobil
+SET pemilik = 'Ibrahim'
+WHERE pemilik = 'Ibe';
+```
+
+## Hasil
+![](aset/mysql106.png)
+
+## Analisis
+- Pada perintah `UPDATE`, tabel yang diubah adalah `mobil`.
+- Perintah `SET` digunakan untuk mengubah nilai kolom `pemilik` menjadi `'Ibrahim'`.
+- Klausa `WHERE` digunakan untuk membatasi baris-baris yang akan diubah. Di sini, hanya baris-baris dengan nilai kolom `pemilik` sama dengan `'Ibe'` yang akan diubah.
+
+## Kesimpulan
+Perintah `UPDATE` di atas digunakan untuk mengubah nilai kolom `pemilik` menjadi `'Ibrahim'` pada baris-baris di tabel `mobil` yang sebelumnya memiliki nilai `pemilik` sama dengan `'Ibe'`.
+
+# Select
+## Kode Program
+```mysql
+select * from mobil
+```
+
+
+## Hasil
+![](aset/mysql106.png)
+
+## Analisis
+- Pada perintah `SELECT`, digunakan untuk mengambil data dari tabel `mobil`.
+- Tanda `*` dalam `SELECT *` digunakan untuk menampilkan semua kolom dari tabel `mobil`.
+- Tidak ada klausa `WHERE` dalam perintah `SELECT`, sehingga seluruh baris dari tabel `mobil` akan ditampilkan.
+
+## Kesimpulan
+Perintah `SELECT * FROM mobil;` digunakan untuk menampilkan semua data dari tabel `mobil`.
+
+
+# Delete 
+## Kode Program
+```mysql
+DELETE FROM mobil
+WHERE peminjam IS NULL;
+```
+
+## Hasil
+![](aset/mysql107.png)
+
+## Analisis
+- Perintah `DELETE FROM` digunakan untuk menghapus baris-baris dari tabel `mobil`.
+- Klausa `WHERE` digunakan untuk membatasi baris-baris yang akan dihapus. Di sini, hanya baris-baris dengan nilai kolom `peminjam` yang `NULL` yang akan dihapus.
+
+## Kesimpulan
+Perintah `DELETE FROM mobil WHERE peminjam IS NULL;` digunakan untuk menghapus baris-baris dari tabel `mobil` yang memiliki nilai `NULL` pada kolom `peminjam`.
+
+# Drop Table
+## Kode Program
+```mysql
+drop table mobil;
+```
+
+## Hasil
+![](aset/mysql108.png)
+
+## Analisis
+- Perintah `DROP TABLE` digunakan untuk menghapus seluruh struktur tabel beserta datanya.
+- Pada contoh ini, perintah `DROP TABLE mobil` akan menghapus seluruh tabel `mobil` beserta semua data yang ada di dalamnya.
+
+## Kesimpulan
+Perintah `DROP TABLE mobil;` digunakan untuk menghapus seluruh struktur tabel `mobil` beserta semua datanya.
+
+
 # AND 
 ## Struktur
 ```mysql
@@ -201,33 +384,6 @@ select * from mobil where harga_rental!=50000;
 > [!summary]
 > dari kedua contoh operator kita bisa menyimpulkan bahwa operator `!=` dengan `<>` memiliki arti yang sama yang dimana jika ingin menampilakan table dengan menggunakan sebauh nilai maka nilai yang ingin di tampilakan tidak boleh sama dengan nilai yang telah di tentukan
 
-# Tantangan Login
-## Struktur
-```mysql
-select nama_kolom1 from nama_table where nama_kolom2=nilai;
-```
-
-## Contoh
-```mysql
-select pemilik from mobil where no_plat="DD 2560 XY";
-```
-
-## Hasil
-![](aset/mysql32.png)
-
-## Analisis
-1. `select` query yang digunakan untuk menampilkan sebuah table
-2. `pemilik` nama kolom yang dimana hanya isi dari kolom ini yang akan di tampilkan
-3. `from` query yang digunakan untuk memberikan sebuah tanda ke table yang akan di tampilkan 
-4. `mobil` nama table yang akan di tampilkan
-5. `where` query yang digunakan untuk memberikan sebuah kondisi 
-6. `no_plat="DD 2560 XY"` sebuah kondisi yang telah diberikan. `no_plat` adalah nama kolom, `=` adalah operator, dan `"DD 2560 XY"` adalah nilai.
-
-> [!summary]
-> jika ingin menampilkan dari hasil seleksi yang dimana hanya ada satu nilai dari satu kolom aka di tampilkan, yaitu dengan cara menggunakan query dengan struktur `select nama_kolom1 from nama_table where nama_kolom2=nilai;`
-
-> [!NOTE] Catatan 
-> `nama_kolom2` harus kolom yang menggunakan constraint unique 
 
 # IN
 ## IN
@@ -826,58 +982,6 @@ DROP VIEW info_no_plat;
 > [!summary]- Kesimpulan
 > Perintah ini digunakan untuk menghapus view dengan nama `info_no_plat` dari database. Ketika perintah ini dijalankan, view tersebut akan dihapus dan tidak akan lagi tersedia untuk digunakan. Ini memungkinkan Anda untuk membersihkan definisi view yang tidak lagi diperlukan dari database Anda.
 
-# Tantangan Table Virtual
-## Soal no 1
-> [!faq]- No 1
-> buat kan table virtual yang peminjamnya tidak ada dan tampilkan datanya
-
-### Kode Program
-```mysql
-CREATE VIEW mobil_Tanpa_peminjam AS Select no_plat,peminjam From mobil WHERE peminjam IS NULL ;
-```
-
-### Hasil
-![](aset/mysql57.png)
-
-### Analisis
-1. `CREATE VIEW mobil_Tanpa_peminjam AS`: Perintah ini digunakan untuk membuat view baru dengan nama `mobil_Tanpa_peminjam`.
-    
-2. `SELECT no_plat, peminjam FROM mobil WHERE peminjam IS NULL;`: Query ini akan mengambil nilai dari kolom `no_plat` dan `peminjam` dari tabel `mobil` dimana nilai `peminjam` adalah NULL.
-
-
-> [!summary]- Kesimpulan
-> Perintah `CREATE VIEW mobil_Tanpa_peminjam AS` digunakan untuk membuat view baru dengan nama `mobil_Tanpa_peminjam`. View ini akan menampilkan semua data mobil yang tidak memiliki peminjam. Query `SELECT no_plat, peminjam FROM mobil WHERE peminjam IS NULL;` akan mengambil nilai dari kolom `no_plat` dan `peminjam` dari tabel `mobil` dimana nilai `peminjam` adalah NULL.
-
-## Soal No 2
-> [!faq]- No 2
-> ganti salah satu data peminjam dari table mobil dengan nilai null dan tampilkan isi data pada table virtual hasil nya akan tiga data yang tampil
-
-### Kode Program
-```mysql
-UPDATE mobil SET peminjam = NULL where peminjam =  'Elia' ;
-```
-### Hasil 
-![](aset/mysql58.png)
-
-### Analisis
-1. `UPDATE mobil`: Perintah ini digunakan untuk mengupdate data dalam tabel `mobil`.
-    
-2. `SET peminjam = NULL`: Bagian ini menentukan bahwa nilai kolom `peminjam` akan diubah menjadi NULL.
-    
-3. `WHERE peminjam = 'Elia'`: Kondisi ini membatasi pengubahan hanya untuk baris-baris dimana nilai kolom `peminjam` adalah 'Elia'.
-
-> [!summary]-  Kesimpulan
-> perintah `UPDATE mobil SET peminjam = NULL WHERE peminjam = 'Elia'` akan mengubah nilai kolom `peminjam` menjadi NULL hanya untuk baris-baris di mana nilai kolom `peminjam` adalah 'Elia' dalam tabel `mobil`
-
-### Soal No 3
-> [!faq]- No 3
-> berikan kesimpulan mengapa table virtual ini di buat
-
-> [!Summary]- Kesimpulan
-> View dapat digunakan untuk menyaring data yang sesuai dengan kriteria tertentu, seperti menampilkan entri yang memiliki nilai NULL pada kolom tertentu atau mengubah salah satu data peminjam menjadi NULL. memberikan pandangan yang jelas tentang mobil yang tersedia untuk disewakan atau yang belum dipinjam.
-Dengan membuat view dapat membatasi akses ke data sensitif atau kolom tertentu dari tabel yang mungkin tidak perlu diakses oleh semua pengguna.
-Dengan membuat view untuk kueri yang sering digunakan, Anda dapat menghindari pengulangan kode SQL yang sama di beberapa tempat dalam aplikasi atau prosedur penyimpanan.
-
 # Agregasi
 
 ## Menghitung total nilai numerik suatu kolom
@@ -1012,4 +1116,162 @@ SELECT AVG(harga_rental) AS rerata FROM mobil;
 > [!summary]- Kesimpulan
 > Query tersebut menghitung nilai rata-rata dari kolom `harga_rental` di tabel `mobil` dan memberikan hasilnya dengan nama alias `rerata`. Ini memberikan informasi tentang rata-rata harga rental dari semua mobil yang terdaftar dalam tabel.
 
+
+
+## Menambahkan kolom
+### Struktrur query
+```mysql
+ALTER TABLE nama_table ADD nama_kolom_baru varchar(10) AFTER nama_kolom_lama;
+```
+
+### Kode Program
+```mysql
+ALTER TABLE mobil ADD batas_peminjaman varchar(10) AFTER peminjam;
+```
+
+### Hasil
+![](aset/mysql65.png)
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah struktur tabel `mobil`.
+- `ADD batas_peminjaman varchar(10)`: Menambahkan kolom baru dengan nama `batas_peminjaman` yang memiliki tipe data `varchar(10)`.
+- `AFTER peminjam`: Menentukan bahwa kolom baru akan ditambahkan setelah kolom `peminjam` dalam struktur tabel.
+
+> [!summary]- Kesimpulan
+> Perintah ini digunakan untuk menambahkan kolom `batas_peminjaman` dengan tipe data `varchar(10)` ke tabel `mobil` setelah kolom `peminjam`. Dengan menambahkan kolom ini, Anda dapat menyimpan informasi tentang batas peminjaman untuk setiap mobil dalam tabel.
+
+
+## Mengubah nama kolom
+### Struktur query
+```mysql
+ALTER TABLE nama_table CHANGE COLUMN nama_kolom_lama nama_kolom_baru varchar(10);
+```
+
+### Kode program
+```mysql
+ALTER TABLE mobil CHANGE COLUMN batas_peminjaman deadline varchar(10);
+```
+
+### Hasil
+![](aset/mysql66.png)
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah struktur tabel `mobil`.
+- `CHANGE COLUMN batas_peminjaman deadline varchar(10)`: Mengubah kolom `batas_peminjaman` menjadi `deadline` dengan tipe data `varchar(10)`.
+
+
+> [!summary]- Kesimpulan
+> Perintah ini mengubah nama kolom `batas_peminjaman` menjadi `deadline` dan mengubah tipe data menjadi `varchar(10)` dalam tabel `mobil`. Dengan ini, Anda dapat menggunakan nama kolom baru `deadline` untuk menyimpan informasi tentang batas peminjaman untuk setiap mobil dalam tabel.
+
+
+## Mengubah tipe data kolom
+### Struktur query
+```mysql
+ALTER TABLE nama_table MODIFY nama_kolom tipe_data_baru
+```
+
+### Kode Program
+```mysql
+ALTER TABLE mobil MODIFY deadline DATE;
+```
+
+
+### Hasil
+![](aset/mysql67.png)
+
+
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah struktur tabel `mobil`.
+- `MODIFY deadline DATE`: Mengubah tipe data kolom `deadline` menjadi `DATE`.
+
+
+> [!summary]- Kesimpulan
+> Perintah ini mengubah tipe data kolom `deadline` dalam tabel `mobil` menjadi `DATE`. Dengan ini, Anda dapat menggunakan kolom `deadline` untuk menyimpan informasi tentang batas peminjaman dalam format tanggal, yang lebih tepat dan mudah untuk dikelola.
+
+
+## Menambahkan constraint
+### struktur query 
+```mysql
+ALTER TABLE nama_table ALTER nama_kolom SET DEFAULT 'nama_constraint';
+```
+
+### Kode program
+```mysql
+ALTER TABLE mobil ALTER deadline SET DEFAULT 'Ready';
+```
+
+### Hasil
+![](aset/mysql68.png)
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah struktur tabel `mobil`.
+- `ALTER deadline SET DEFAULT 'Ready'`: Mengatur nilai default kolom `deadline` menjadi 'Ready'.
+
+> [!summary]- Kesimpulan
+> Perintah ini mengubah nilai default kolom `deadline` dalam tabel `mobil` menjadi 'Ready'. Ini berarti jika tidak ada nilai yang diberikan untuk kolom `deadline` saat sebuah baris dimasukkan ke dalam tabel, maka nilainya akan secara otomatis diatur sebagai 'Ready'.
+
+## Menghapus constraint
+### Struktur query 
+```mysql 
+ALTER TABLE nama_table ALTER nama_kolom DROP DEFAULT;
+```
+
+### Kode program
+```mysql
+ALTER TABLE mobil ALTER deadline DROP DEFAULT;
+```
+
+### Hasil
+![](aset/mysql69.png)
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah struktur tabel `mobil`.
+- `ALTER deadline DROP DEFAULT`: Menghapus nilai default yang sebelumnya ditetapkan untuk kolom `deadline`.
+
+> [!summary]- Kesimpulan
+> Perintah ini menghapus nilai default yang sebelumnya ditetapkan untuk kolom `deadline` dalam tabel `mobil`. Setelah perintah ini dijalankan, jika tidak ada nilai yang diberikan untuk kolom `deadline` saat sebuah baris dimasukkan ke dalam tabel, maka kolom tersebut akan memiliki nilai NULL.
+
+
+## Menghapus kolom
+### Struktur query
+```mysql
+ALTER TABLE nama_table DROP COLUMN nama_kolom;
+```
+
+### Kode program
+```mysql
+ALTER TABLE mobil DROP COLUMN deadline
+```
+
+### Hasil
+![](aset/mysql70.png)
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah struktur tabel `mobil`.
+- `DROP COLUMN deadline`: Menghapus kolom `deadline` dari tabel `mobil`.
+
+> [!summary]- Kesimpulan
+> Perintah ini menghapus kolom `deadline` dari tabel `mobil`. Setelah perintah ini dijalankan, kolom `deadline` akan dihapus dari struktur tabel `mobil` dan tidak akan lagi tersedia untuk digunakan.
+
+## Mengganti nama table
+### Struktur query
+```mysql
+ALTER TABLE nama_table_lama RENAME TO nama_table_baru;
+```
+
+### Kode program
+```mysql
+ALTER TABLE mobil RENAME TO data_mobil;
+```
+
+### Hasil
+![](aset/mysql71.png)
+
+### Analisis
+- `ALTER TABLE mobil`: Perintah untuk mengubah tabel dengan nama `mobil`.
+- `RENAME TO data_mobil`: Mengubah nama tabel `mobil` menjadi `data_mobil`.
+
+> [!summary]- Kesimpulan
+> Perintah ini mengubah nama tabel `mobil` menjadi `data_mobil`. Setelah perintah ini dijalankan, tabel tersebut akan dapat diakses dengan nama baru `data_mobil` dan tidak lagi dengan nama `mobil`.
 
