@@ -1,3 +1,10 @@
+# Table 1 
+![500](aset/table1.png)
+
+
+# Table 2
+![600](aset/table2.png)
+
 # QUERY 1
 ```SQL
 SELECT p.ProductID, p.ProductName, od.Quantity, p.UnitsInStock

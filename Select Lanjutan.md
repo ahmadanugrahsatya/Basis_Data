@@ -209,19 +209,19 @@ select nama_kolom1 from nama_table where nama_kolom2=nilai;
 
 ## Contoh
 ```mysql
-select pemilik from mobil where no_plat="DD 2560 XY";
+SELECT nama  from akun WHERE password="12345";
 ```
 
 ## Hasil
-![](aset/mysql32.png)
+![](aset/mysql110.png)
 
 ## Analisis
-1. `select` query yang digunakan untuk menampilkan sebuah table
-2. `pemilik` nama kolom yang dimana hanya isi dari kolom ini yang akan di tampilkan
+1. `SELECT` query yang digunakan untuk menampilkan sebuah table
+2. `nama` nama kolom yang dimana hanya isi dari kolom ini yang akan di tampilkan
 3. `from` query yang digunakan untuk memberikan sebuah tanda ke table yang akan di tampilkan 
-4. `mobil` nama table yang akan di tampilkan
+4. `akun` nama table yang akan di tampilkan
 5. `where` query yang digunakan untuk memberikan sebuah kondisi 
-6. `no_plat="DD 2560 XY"` sebuah kondisi yang telah diberikan. `no_plat` adalah nama kolom, `=` adalah operator, dan `"DD 2560 XY"` adalah nilai.
+6. `password="12345"` sebuah kondisi yang telah diberikan. `password` adalah nama kolom, `=` adalah operator, dan `"12345"` adalah nilai.
 
 > [!summary]
 > jika ingin menampilkan dari hasil seleksi yang dimana hanya ada satu nilai dari satu kolom aka di tampilkan, yaitu dengan cara menggunakan query dengan struktur `select nama_kolom1 from nama_table where nama_kolom2=nilai;`
@@ -1012,4 +1012,174 @@ SELECT AVG(harga_rental) AS rerata FROM mobil;
 > [!summary]- Kesimpulan
 > Query tersebut menghitung nilai rata-rata dari kolom `harga_rental` di tabel `mobil` dan memberikan hasilnya dengan nama alias `rerata`. Ini memberikan informasi tentang rata-rata harga rental dari semua mobil yang terdaftar dalam tabel.
 
+# Tantangan Groub & Having
 
+## 1.tampilkan jumlah data mobil dan kelompok kan berdasarkan warna nya sesuai den     gan tabel mobil kalian
+
+### Jawab
+#### Kode Program
+```mysql
+SELECT warna, COUNT(*) AS jumlah_mobil
+FROM mobil
+GROUP BY warna;
+```
+
+#### Hasil
+![](aset/mysql84.png)
+
+#### Analisis
+- `SELECT warna, COUNT(*) AS jumlah_mobil`: Memilih kolom `warna` dan menghitung jumlah mobil untuk setiap warna.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY warna`: Data dikelompokkan berdasarkan warna mobil.
+
+#### Kesimpulan
+Query ini menghitung jumlah mobil yang ada untuk setiap warna yang berbeda di tabel `mobil`.
+
+
+## 2.berdasarkan query ini tampilkan yang lebih BESAR dari 3 atau sama dengan 3 pemilik mobil nya
+
+### Jawab
+
+#### Kode Program
+```mysql
+SELECT pemilik
+FROM mobil
+GROUP BY pemilik
+HAVING COUNT(*) >= 3;
+```
+
+
+#### Hasil
+![](aset/mysql86.png)
+
+#### Analisis
+- `SELECT pemilik`: Memilih kolom `pemilik`.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY pemilik`: Data dikelompokkan berdasarkan pemilik mobil.
+- `HAVING COUNT(*) >= 3`: Memilih hanya pemilik yang memiliki 3 mobil atau lebih.
+
+#### Kasimpulan
+Query ini menampilkan daftar pemilik yang memiliki setidaknya 3 mobil.
+
+
+
+## 3.tampilkan smua pemilik dengan jumlah mobilnya yang memiliki atau sama dengan 3 mobil
+
+### Jawab
+#### Kode Program
+
+```mysql
+SELECT pemilik, COUNT(*) AS jumlah_mobil
+FROM mobil
+GROUP BY pemilik
+HAVING COUNT(*) >= 3;
+```
+
+
+#### Hasil
+![](aset/mysql86.png)
+
+#### Analisis
+- `SELECT pemilik, COUNT(*) AS jumlah_mobil`: Memilih kolom `pemilik` dan menghitung jumlah mobil untuk setiap pemilik.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY pemilik`: Data dikelompokkan berdasarkan pemilik mobil.
+- `HAVING COUNT(*) >= 3`: Memilih hanya pemilik yang memiliki 3 mobil atau lebih.
+
+#### Kesimpulan
+Query ini menampilkan daftar pemilik beserta jumlah mobil yang mereka miliki, dengan syarat pemilik tersebut memiliki setidaknya 3 mobil.
+
+## 4. Mengelompokkan berdasarkan pemilik dan menghitung total pendapatan berdasarkan harga rental
+
+### Jawab
+
+#### Kode Program
+```mysql
+SELECT pemilik, SUM(harga_rental) AS total_pendapatan
+FROM mobil
+GROUP BY pemilik;
+```
+
+
+#### Hasil
+![](aset/mysql112.png)
+
+#### Analisis
+- `SELECT pemilik, SUM(harga_rental) AS total_pendapatan`: Memilih kolom `pemilik` dan menghitung total pendapatan berdasarkan harga rental untuk setiap pemilik.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY pemilik`: Data dikelompokkan berdasarkan pemilik mobil.
+
+#### Kesimpulan
+Query ini menghitung total pendapatan dari harga rental mobil untuk setiap pemilik.
+
+##  5. Mengelompokkan berdasarkan pemilik dan menampilkan jumlah pemasukan yang mencapai lebih besar atau sama dengan 300k
+
+### Jawab
+
+#### Kode Program
+```mysql
+SELECT pemilik, SUM(harga_rental) AS total_pemasukan
+FROM mobil
+GROUP BY pemilik
+HAVING SUM(harga_rental) >= 300000;
+```
+
+#### Hasil
+![](aset/mysql113.png)
+
+
+#### Analisis
+- `SELECT pemilik, SUM(harga_rental) AS total_pemasukan`: Memilih kolom `pemilik` dan menghitung total pemasukan berdasarkan harga rental untuk setiap pemilik.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY pemilik`: Data dikelompokkan berdasarkan pemilik mobil.
+- `HAVING SUM(harga_rental) >= 300000`: Memilih hanya pemilik yang total pemasukan dari harga rental mobilnya mencapai atau lebih besar dari 300k.
+
+#### Kesimpulan
+Query ini menampilkan daftar pemilik yang total pemasukan dari harga rental mobilnya mencapai atau lebih besar dari 300k.
+
+## 6. Menampilkan rata-rata pemasukan pemilik mobil dikelompokkan berdasarkan pemiliknya
+### Jawab
+
+#### Kode Program
+```mysql
+SELECT pemilik, AVG(harga_rental) AS rata_rata_pemasukan
+FROM mobil
+GROUP BY pemilik;
+```
+
+
+#### Hasil
+![](aset/mysql114.png)
+
+
+#### Analisis
+- `SELECT pemilik, AVG(harga_rental) AS rata_rata_pemasukan`: Memilih kolom `pemilik` dan menghitung rata-rata pemasukan berdasarkan harga rental untuk setiap pemilik.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY pemilik`: Data dikelompokkan berdasarkan pemilik mobil.
+
+#### Kesimpulan
+Query ini menghitung rata-rata pemasukan dari harga rental mobil untuk setiap pemilik.
+
+
+##  7. Menampilkan pemasukan terbesar dan terkecil dikelompokkan berdasarkan pemilik dan menyeleksi data pemilik yang memiliki jumlah mobil lebih dari 1
+### Jawab
+
+#### Kode Program
+```mysql
+SELECT pemilik, MAX(harga_rental) AS pemasukan_terbesar, MIN(harga_rental) AS pemasukan_terkecil
+FROM mobil
+GROUP BY pemilik
+HAVING COUNT(*) > 1;
+```
+
+#### Hasil
+![](aset/mysql111.png)
+
+
+#### Analisis
+- `SELECT pemilik, MAX(harga_rental) AS pemasukan_terbesar, MIN(harga_rental) AS pemasukan_terkecil`: Memilih kolom `pemilik` dan menghitung pemasukan terbesar dan terkecil berdasarkan harga rental untuk setiap pemilik.
+- `FROM mobil`: Data diambil dari tabel `mobil`.
+- `GROUP BY pemilik`: Data dikelompokkan berdasarkan pemilik mobil.
+- `HAVING COUNT(*) > 1`: Memilih hanya pemilik yang memiliki lebih dari 1 mobil.
+
+#### Kesimpulan
+Query ini menampilkan pemasukan terbesar dan terkecil dari harga rental mobil untuk setiap pemilik yang memiliki lebih dari 1 mobil.

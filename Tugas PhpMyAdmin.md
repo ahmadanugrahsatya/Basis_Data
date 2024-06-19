@@ -1,4 +1,4 @@
-# 1.tampilkan jumlah data mobil dan kelompok kan berdasarkan warna nya sesuai dengan tabel mobil kalian
+# 1.tampilkan jumlah data mobil dan kelompok kan berdasarkan warna nya sesuai den     gan tabel mobil kalian
 
 ## Jawab
 ![](aset/mysql84.png)
